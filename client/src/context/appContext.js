@@ -63,7 +63,7 @@ const AppProvider = ({ children }) => {
   };
 
   const authFetch = axios.create({
-    baseURL: "http://localhost:5001/",
+    baseURL: "https://wealth-wise.onrender.com/",
   });
 
   authFetch.interceptors.request.use(
