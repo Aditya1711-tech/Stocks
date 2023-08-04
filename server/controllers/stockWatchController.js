@@ -84,9 +84,7 @@ const getWatches = async (req, res) => {
           allWatch.push(obj);
         })
         .catch((e) => {
-          console.log(e);
           res.status(StatusCodes.BAD_REQUEST).json({ success: false });
-          return;
         });
     }
     res.status(StatusCodes.ACCEPTED).json({ watches: allWatch });
